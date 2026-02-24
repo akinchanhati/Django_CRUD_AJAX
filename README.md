@@ -5,7 +5,7 @@ Django CRUD application with dynamic operations using AJAX — perform Create, R
 
 This project demonstrates a Django CRUD (Create, Read, Update, Delete) application that performs all operations dynamically using AJAX, without reloading the page.
 
-✨ Features
+✨ **Features**
 
 Create records dynamically using AJAX
 
