@@ -1,0 +1,16 @@
+{% for subject in subjects %}
+    <tr>
+        <td>{{ subject.stream.name }}</td>
+        <td>{{ subject.name }}</td>
+        <td>Sem - {{ subject.semester }}</td>
+        <td>
+            <button class="btn btn-primary sub-edit-btn" data-id="{{ subject.id }}" data-stream_id="{{ subject.stream_id }}" data-subject_name="{{ subject.name }}" data-subject_semester="{{ subject.semester }}">Edit</button>
+    
+            <button class="btn btn-danger sub-delete-btn" data-id="{{ subject.id }}">Delete</button>
+        </td>
+
+    {% empty %}
+    <tr>
+        <td>No Subject found </td>
+    </tr>
+{% endfor %}

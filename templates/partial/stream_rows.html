@@ -1,0 +1,12 @@
+{% for stream in streams %}
+    <tr>
+        <td>{{ stream.name }}</td>
+        <td>{{ stream.description }}</td>
+        <td>{{ stream.semester }}</td>
+        <td>
+            <button class="btn btn-primary edit-btn" data-id="{{ stream.id }}" data-name="{{ stream.name }}" data-description="{{ stream.description }}" data-semester="{{ stream.semester }}">Edit</button>
+            
+            <button class="btn btn-danger delete-btn" data-id="{{ stream.id }}">Delete</button>
+        </td>
+    </tr>
+{% endfor %}
